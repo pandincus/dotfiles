@@ -10,6 +10,7 @@ Plugin 'kien/ctrlp.vim'
 "experimental
 "Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/syntastic'
+Plugin 'ntpeters/vim-better-whitespace'
 call vundle#end()
 filetype plugin indent on
 " To ignore plugin indent changes, instead use:
@@ -38,3 +39,6 @@ let g:syntastic_check_on_wq = 0
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+nnoremap <C-t>     :tabnew<CR>
+inoremap <C-t>     <Esc>:tabnew<CR>
